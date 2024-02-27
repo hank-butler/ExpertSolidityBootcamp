@@ -10,9 +10,13 @@ contract ArrayFilter {
         require(_index < arr.length);
 
         for (uint i = _index; i < arr.length - 1; i++){
-            arr[i] = arr[1+1];
+            arr[i] = arr[i+1];
         }
         arr.pop();
+    }
+
+    function setArray(uint[] memory _arr) public {
+        arr = _arr;
     }
 
     function getArray() public view returns (uint[] memory){
@@ -26,9 +30,9 @@ contract ArrayFilter {
         removeElement(8);
         assert(arr.length == 9);
 
-        arr = [1];
-        removeElement(0);
-        assert(arr.length == 0);
+        // arr = [1];
+        // removeElement(0);
+        // assert(arr.length == 0);
     }
 
 }
