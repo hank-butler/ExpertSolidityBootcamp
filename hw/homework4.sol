@@ -8,5 +8,5 @@ contract NewContract {
     // Gotta catup and knock out some stuff
     // Why is Kuj so mean about me doing this?
 
-    
+    // Yay another comment to get another commit!
 }
